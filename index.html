@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HackerYou Tech Challenge</title>
+  </head>
+  <body>
+      <h1>Submission For HackerYou Advanced JS Course</h1>
+      <div class="section1">
+        Open up the console to view results
+      </div>
+      <div class="answer">
+        <h2>Answer #1</h2>
+        <p>Create a Tip calcuator function that takes in three things:</p>
+        <ol>
+          <li>meal price</li>
+          <li>Tax Rate</li>
+          <li>Tip Rate</li>
+        </ol>
+        <p>It should return a value which you can console.log. Have the function default to 13% tax and 15% tip. Make the function return a string formatted $x.xx. (please use ES6 for this!)</p>
+        <button type="button" id="showAnswer1">Show Reciept</button>
+        <button type="button" id="showAnswer1tip">Tip 18%</button>
+        <button type="button" id="showAnswer1BC">Use BC HST</button>
+      </div>
+      <div class="answer">
+        <h2>Answer #2</h2>
+        <p>Create a student object. The student should have the following properties:</p>
+        <ul>
+          <li>equipment (array with computer, pen, paper strings inside of it).</li>
+          <li>energy (number - 300).</li>
+          <li>grades (number - 95).</li>
+          <li>uniform (object with top, bottoms, shoes properties).</li>
+          <li>create a method that takes in food (number of calories) and then updates energy by the same number of calories.</li>
+          <li>create a method that takes in new equipment that will update our equipment array (add it to the end).</li>
+          <li>create a method that will change any part of the uniform object (since everyday you wear something different).</li>
+          <li>create a method study time that takes time studied (minutes) that will update our grades and deplete our energy. </li>
+          <li>For every hour that you study, your grades go up by 5% (example: if your grade is 60, and you study an hour, your </li>grade will be 65). For every hour you study, your energy goes down by 2. (Bonus: if your energy goes below 0, your grades go down 10%)
+          <li>Update uniform method to change something that doesn't exist in the uniform object, like adding an accessory, that is equal to glasses.</li>
+        </ul>
+        <button type="button" id="showStudent">Show Student Info</button>
+        <button type="button" id="eatBurrito">Eat Burrito (400 cals)</button>
+        <button type="button" id="buyLaptop">Buy a Laptop and Mouse</button>
+        <button type="button" id="putOnSweater">Put on a Sweater</button>
+        <button type="button" id="study">Study for 80 minutes</button>
+        <button type="button" id="putOnSunglasses">Put on Sunglasses</button>
+      </div>
+      <div class="answer">
+        <h2>Answer #3</h2>
+        <p>Please iterate through the farm object below.</p> 
+        <p>If there is a nested object, then iterate through that as well.</p> 
+        <p>You should console log each property name and property value in all objects, 
+        example "crop is Winter Wheat", using a template literal.</p>
+        <button type="button" id="showFarm">Show Farm Data</button>
+      </div>
+      <div class="answer">
+        <h2>Answer #4</h2>
+        <p>Create a Counter</p> 
+        <p class="message">Choose a goal first!</p>
+        <p class="count">0</p>
+        <button type="button" id="countUp">Up</button>
+        <button type="button" id="countDown">Down</button>
+        <label for="countingGoal">Counting Goal</label>
+        <input type="number" id="countingGoal" />
+        <button type="button" id="toggleGame">StartGame</button>
+
+      </div>
+
+  
+  </body>
+  <script src="js/tipcalculator.js"></script>
+  <script src="js/student.js"></script>
+  <script src="js/farm.js"></script>
+  <script src="js/counting.js"></script>
+</html>
