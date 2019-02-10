@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles */
+body {
+  font-family: Helvetica, Arial,sans-serif;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 50px;
+}
+h1, h2 {
+  margin: 1em 0;
+}
+h1 {
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 1.2;
+}
+h2 {
+  font-weight: 700;
+}
+.answer {
+  border-top: 1px solid #CCC;
+  padding-bottom: 20px;
+}
+p,
+ul li,
+ol li {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+ol li {
+  list-style: lower-alpha;
+  margin-left: 1.5em;
+}
+ul li {
+  list-style: disc;
+  margin-left: 1.5em;
+}
+button {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 16px;
+  border: none;
+  background-color: #DDD;
+  padding: 12px 30px;
+  margin: 0 12px 12px 0;
+}
+button:hover,
+button:active {
+  background-color: #CCC;
+}
+.countingGame {
+  padding: 12px;
+  background-color: #4682b4;
+  color: #FFF;
+
+}
+.countingGame .message {
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 6px;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+.countingGame .counter-container {
+  width: 260px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+.countingGame .count-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.countingGame .count-buttons button {
+  width: 50%;
+  display: inline-block;
+  margin: 0;
+}
+.countingGame .count-buttons button:first-child {
+  margin-right: 10px;
+}
+.countingGame .count {
+  font-size: 48px;
+  background-color: #FFF;
+  line-height: 1;
+  display: inline-block;
+  color: #000;
+  padding: 10px;
+}
+.countingGame .goal-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.countingGame .goal-container input {
+  vertical-align: top;
+  font-size: 24px;
+  padding: 5px;
+  width: 80px;
+  margin-right: 6px;
+}
+.countingGame .goal-container label {
+  display: inline-block;
+  vertical-align: top;
+  margin: 12px;
+}
+.countingGame .goal-container button {
+  background-color: #304c02;
+  color: #FFF
+}
+.countingGame .goal-container button.gameActive {
+  background-color: red;
+  color: #FFF
+}

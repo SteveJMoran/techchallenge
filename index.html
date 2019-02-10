@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>HackerYou Tech Challenge</title>
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
       <h1>Submission For HackerYou Advanced JS Course</h1>
       <div class="section1">
-        Open up the console to view results
+        <p>Open up the console to view results</p>
       </div>
       <div class="answer">
         <h2>Answer #1</h2>
@@ -34,7 +36,7 @@
           <li>create a method that takes in new equipment that will update our equipment array (add it to the end).</li>
           <li>create a method that will change any part of the uniform object (since everyday you wear something different).</li>
           <li>create a method study time that takes time studied (minutes) that will update our grades and deplete our energy. </li>
-          <li>For every hour that you study, your grades go up by 5% (example: if your grade is 60, and you study an hour, your </li>grade will be 65). For every hour you study, your energy goes down by 2. (Bonus: if your energy goes below 0, your grades go down 10%)
+          <li>For every hour that you study, your grades go up by 5% (example: if your grade is 60, and you study an hour, your grade will be 65). For every hour you study, your energy goes down by 2. (Bonus: if your energy goes below 0, your grades go down 10%)</li>
           <li>Update uniform method to change something that doesn't exist in the uniform object, like adding an accessory, that is equal to glasses.</li>
         </ul>
         <button type="button" id="showStudent">Show Student Info</button>
@@ -55,17 +57,24 @@
       <div class="answer">
         <h2>Answer #4</h2>
         <p>Create a Counter</p> 
+        <div class="countingGame">
         <p class="message">Choose a goal first!</p>
-        <p class="count">0</p>
-        <button type="button" id="countUp">Up</button>
-        <button type="button" id="countDown">Down</button>
-        <label for="countingGoal">Counting Goal</label>
-        <input type="number" id="countingGoal" />
-        <button type="button" id="toggleGame">StartGame</button>
-
+        <div class="counter-container">
+          <p class="count">0</p>
+          <div class="count-buttons">
+            <button type="button" id="countUp">Up</button>
+            <button type="button" id="countDown">Down</button>
+          </div>
+        </div>
+        <div class="goal-container">
+          <label for="countingGoal">Counting Goal:</label>
+          <input type="number" id="countingGoal" value="0" />
+          <button type="button" id="toggleGame">Start Game</button>
+        </div>
+        </div>
       </div>
 
-  
+    </div>
   </body>
   <script src="js/tipcalculator.js"></script>
   <script src="js/student.js"></script>
