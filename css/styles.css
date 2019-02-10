@@ -67,6 +67,14 @@ h1 {
 h2 {
   font-weight: 700;
 }
+.notice {
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
 .answer {
   border-top: 1px solid #CCC;
   padding-bottom: 20px;
